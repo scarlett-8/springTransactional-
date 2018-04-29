@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: admin
+    type: com.alibaba.druid.pool.DruidDataSource
+    
+    
+mybatis:
+  mapper-locations: classpath:dao/*.xml
+  type-aliases-package: com.sh.springboot.bean
